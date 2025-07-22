@@ -44,15 +44,16 @@ def recursive_word_counter(text, frequency=None):
 
   return recursive_word_counter(remaining_text, frequency)
 
-text_input = 'Hello world! This is a test. Hello again.'
-
+text_input = input('Enter string text: ')
+ 
 # Example usage of the word frequency counter
 print(word_frequency_counter(text_input))  
 # Example usage of the recursive word frequency counter
 print(recursive_word_counter(text_input))
+
 # Example usage of the recursive word frequency counter with a different text
-another_text_input = 'Python is great. Python is fun. Python is powerful.'
-print(recursive_word_counter(another_text_input))
+# another_text_input = 'Python is great. Python is fun. Python is powerful.'
+# print(recursive_word_counter(another_text_input))
 # Example usage of the recursive word frequency counter with an empty string
-empty_text_input = ''
-print(recursive_word_counter(empty_text_input))
+# empty_text_input = ''
+# print(recursive_word_counter(empty_text_input))
